@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Acme', sans-serif;
+    /* font-family: 'Libre Baskerville', serif; */
+  font-family: "Lora", serif;
+  /* font-family: 'Oswald', sans-serif; */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back {
+  border: 0;
+  background-color: transparent;
+  font-family: monospace;
+  bottom: 10px;
+  float: right;
+  color: white;
+  font-size: 30px;
+  padding-right: 30px;
+  padding-top: -5px;
+}
+
+/* Main page */
+.container {
+  height: 99vh;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  overflow: auto;
+  border: 10px ridge;
+  max-width: 960px;
+}
+
+.img{
+  background-image: url("images/hg.jpeg");
+  background-repeat: no-repeat;
+
+}
+@media only screen and (max-width: 480px) {
+  #stickman {
+    height: 170px !important;
+    width: 250px !important;
+  }
+  .hint {
+    margin: 10px 0 10px 10px !important;
+  }
+  .categories {
+    width: 140px !important;
+    height: 120px !important;
+  }
+  .blank {
+    font-size: 25px !important;
+    font-family: sans-serif !important;
+    margin: 2px;
+    display: inline;
+    font-weight: bolder;
+    /* margin-top: 80px ; */
+    margin-left: 10px !important;
+  }
+  .alphabets {
+    width: 30px !important;
+  }
+}
+
+.my-div {
+  display: inline-block;
+  position: relative;
+  top: 200px;
+}
+.play {
+  margin-right: 45px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: monospace;
+}
+
+.play:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.play,
+.instructions {
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.instructions {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding-left: -150px;
+  font-family: monospace;
+}
+
+.instructions:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.head {
+  font-size: 3.5rem;
+  color: rgb(43, 106, 177);
+  font-weight: 600 !important;
+  padding-top: 10px;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+/* instruction page */
+.ins {
+  display: inline-block;
+  /* overflow: auto; */
+  color: rgb(254, 197, 11);
+  
+}
+.ins ul {
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+}
+.ins h4 {
+  font-weight: 500px;
+  /* font-size: 80px; */
+}
+.ins button {
+  font-size: 27px;
+  color: white;
+}
+.ins button:hover {
+  color: black;
+  font-display: bold;
+}
+
+/* categories page */
+.cat {
+  padding-top: 20%;
+}
+.categories {
+  width: 180px;
+  height: 140px;
+  margin-bottom: 20px;
+  border-radius: 30%;
+  padding: 10px;
+  background-color: rgba(0, 7, 11, 0.5);
+  color: rgb(254, 197, 11);
+  font-size: 30px;
+  font-weight: bold;
+}
+.categories:hover {
+  color: black;
+  background-color:rgb(254, 197, 11);
+}
+
+/* game page */
+
+.content-3 {
+  position: relative;
+  /* display: inline-block !important; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  color:white;
+}
+
+.buttons div {
+  display: inline;
+}
+
+.alphabets {
+  width: 40px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  
+}
+
+.btn-click {
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  background-color: transparent;
+}
+.hint {
+  text-decoration: none;
+  float: left;
+  margin: 40px 0 10px 20px;
+  font-size: 20px;
+  font-family: sans-serif !important;
+  color: green;
+  cursor: pointer;
+}
+
+.wordDiv {
+  padding-top: 30px;
+  color:white;
+}
+.wordDiv2 {
+  padding-top: 30px;
+  color:white;
+}
+.content-3-2 {
+  top: 40px;
+  color:white;
+}
+
+.blank {
+  font-size: 30px;
+  font-family: sans-serif !important;
+  margin: 2px;
+  display: inline;
+  font-weight: bolder;
+  /* margin-top: 80px ; */
+  margin-left: 20px;
+  color:white;
+
+}
+.lives {
+  margin-top: 20px;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family: sans-serif !important;
+  color:rgb(254, 197, 11);
+}
+canvas {
+  color: white;
+  border: white double 10px;
+  background-color: rgba(0, 7, 11, 0.5);
+  padding: 15px;
+  position: relative;
+  height: 200px;
+  width: 400px;
+  /* top: 90px;
+    left: 150px; */
+  /* position: fixed !important; */
+}
+
+/* result page */
+.section-5 {
+  padding-top: 30px;
+  color: rgb(254, 197, 11);
+}
+.content-5 {
+  flex-direction: column;
+  height: 400px;
+  /* width: max-content !important; */
+  margin: 0px auto 0px auto;
+  padding: 20px;
+  /* background-color:rgba(0, 7, 11, 0.5) ; */
+  border: 5px solid rgb(221, 205, 65);
+  font-family: sans-serif !important;
+  color:white;
+}
+.red {
+  color: rgb(254, 197, 11);
+}
+.green {
+  color: rgb(254, 197, 11);
+}
+.ex {
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(254, 197, 11);
+}
+.resBtn {
+  margin: 10px;
+  display: inline;
+  width: 200px;
+  height: 40px;
+  border-radius: 45%;
+  background-color: rgb(254, 197, 11);
+  color:black;
+}
+.resBtn:hover {
+  background-color: rgba(0, 7, 11, 0.5);
+  color: white;
+}
+
+
+.gig{
+  text-align: justify; 
+  text-align: left;
+  font-size: 18px;
+}
+
+.how{
+  color: white;
+}
+
+.dott{
+  color: white;
+}
